@@ -30,7 +30,7 @@ const [tempUnit,setTempUnit]=useState(true)
  //api handler
 
  useEffect(()=>{
-axios.get(`http://api.weatherapi.com/v1/forecast.json?key=24eea85d248843afbd970548212812 &q=${city}&days=3&aqi=no&alerts=no`).then(res=>{setWeather(res.data)})
+axios.get(`https://api.weatherapi.com/v1/forecast.json?key=24eea85d248843afbd970548212812 &q=${city}&days=3&aqi=no&alerts=no`).then(res=>{setWeather(res.data)})
  },[city])
 
 
